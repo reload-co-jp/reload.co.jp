@@ -93,11 +93,17 @@ const primaryColor = "#3e62ad"
   }
   .boxes {
     display: flex;
+    gap: 3%;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     .box {
+      background: #333;
+      border: solid 1px #f0f0f0;
+      margin: 0.5rem 0;
       min-width: 320px;
-      width: 50%;
+      padding: 0 1rem 1rem;
+      width: 48%;
     }
   }
 </style>
