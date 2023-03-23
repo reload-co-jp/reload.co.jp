@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "preinstall": "npx only-allow yarn",
-    "format": "prettier --write **/*.{css,scss,ts,tsx,astro}",
+    "format": "prettier --write **/*.{css,ts,astro}",
     "lint:js": "eslint \"./src/**/*.{js,jsx,ts,tsx,astro}\" --fix --ignore-path .gitignore",
     "lint:style": "stylelint \"./src/**/*.{css,scss,astro}\" --fix --ignore-path .gitignore"
   },
