@@ -262,33 +262,34 @@
     const contentElement = document.getElementById(
       "content"
     ) as HTMLTextAreaElement
+    const jsonBody = JSON.stringify({
+      channel: "#info",
+      username: "Inquiry",
+      text: "お問い合わせが届きました",
+      icon_emoji: ":ghost:",
+      attachments: [
+        {
+          fields: [
+            {
+              title: "名前",
+              value: nameElement.value,
+            },
+            {
+              title: "メールアドレス",
+              value: emailElement.value,
+            },
+            {
+              title: "内容",
+              value: contentElement.value,
+            },
+          ],
+          footer: "Reload inquiry",
+        },
+      ],
+    })
     axios.post(
-      "https://hooks.slack.com/services/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",
-      JSON.stringify({
-        channel: "#info",
-        username: "Inquiry",
-        text: "お問い合わせが届きました",
-        icon_emoji: ":ghost:",
-        attachments: [
-          {
-            fields: [
-              {
-                title: "名前",
-                value: nameElement.value,
-              },
-              {
-                title: "メールアドレス",
-                value: emailElement.value,
-              },
-              {
-                title: "内容",
-                value: contentElement.value,
-              },
-            ],
-            footer: "Reload inquiry",
-          },
-        ],
-      })
+      "https://hooks.slack.com/services/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",
+      jsonBody
     )
   })
 </script>
