@@ -2,6 +2,9 @@
 ---
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
   html {
     background-color: #111;
   }
@@ -51,6 +54,34 @@
   td {
     min-width: 4rem;
     padding: 0.5rem;
+  }
+  input,
+  textarea {
+    border-radius: 2px;
+    border: 1px solid #dbdbdb;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+    &:active,
+    &:focus {
+      appearance: none;
+      border: 1px solid #999;
+      outline: none;
+    }
+  }
+  button {
+    background-color: #3e62ad;
+    border: none;
+    border-radius: 0.2rem;
+    color: #f0f0f0;
+    cursor: pointer;
+    display: block;
+    line-height: 1.5;
+    max-height: 2.5rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
   }
   footer {
     background-color: #111;
@@ -197,15 +228,15 @@
         <form>
           <div>
             <label>お名前</label>
-            <input />
+            <input required />
           </div>
           <div>
             <label>メールアドレス</label>
-            <input />
+            <input type="email" required />
           </div>
           <div>
             <label>お問い合わせ内容</label>
-            <textarea></textarea>
+            <textarea rows="5" required></textarea>
           </div>
           <div>
             <button>送信</button>
