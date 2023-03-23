@@ -45,7 +45,7 @@
     background-image: url(/images/header.jpg);
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 27rem);
+    height: calc(100vh - 4rem);
     padding: 12rem 0;
   }
   table {
@@ -225,18 +225,18 @@
       </section>
       <section>
         <h2>Contact</h2>
-        <form>
+        <form id="contact">
           <div>
             <label>お名前</label>
-            <input required />
+            <input id="name" required />
           </div>
           <div>
             <label>メールアドレス</label>
-            <input type="email" required />
+            <input id="email" type="email" required />
           </div>
           <div>
             <label>お問い合わせ内容</label>
-            <textarea rows="5" required></textarea>
+            <textarea rows="5" required id="content"></textarea>
           </div>
           <div>
             <button>送信</button>
@@ -251,3 +251,44 @@
     <p>&copy;&nbsp;Reload, Inc.</p>
   </aside>
 </footer>
+
+<script>
+  import axios from "axios"
+  const form = document.querySelector("form#contact")
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault()
+    const nameElement = document.getElementById("name") as HTMLInputElement
+    const emailElement = document.getElementById("email") as HTMLInputElement
+    const contentElement = document.getElementById(
+      "content"
+    ) as HTMLTextAreaElement
+    axios.post(
+      "https://hooks.slack.com/services/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",
+      JSON.stringify({
+        channel: "#info",
+        username: "Inquiry",
+        text: "お問い合わせが届きました",
+        icon_emoji: ":ghost:",
+        attachments: [
+          {
+            fields: [
+              {
+                title: "名前",
+                value: nameElement.value,
+              },
+              {
+                title: "メールアドレス",
+                value: emailElement.value,
+              },
+              {
+                title: "内容",
+                value: contentElement.value,
+              },
+            ],
+            footer: "Reload inquiry",
+          },
+        ],
+      })
+    )
+  })
+</script>
