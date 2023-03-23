@@ -1,19 +1,20 @@
 {
-	"name": "reload.co.jp",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"astro": "^2.1.5",
-		"autoprefixer": "^10.4.14",
-		"axios": "^1.3.4",
-		"cssnano": "^5.1.15",
-		"postcss-nesting": "^11.2.1"
-	}
+  "name": "reload.co.jp",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "preinstall": "npx only-allow yarn"
+  },
+  "dependencies": {
+    "astro": "^2.1.5",
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.3.4",
+    "cssnano": "^5.1.15",
+    "postcss-nesting": "^11.2.1"
+  }
 }
