@@ -355,9 +355,10 @@ const primaryColor = "#3e62ad"
             <textarea rows="5" required id="content"></textarea>
           </div>
           <div>
-            <button>送信</button>
+            <button type="submit" id="contact-submit">送信</button>
           </div>
         </form>
+        <p id="done-message"></p>
       </section>
     </main>
   </body>
@@ -372,6 +373,11 @@ const primaryColor = "#3e62ad"
   import axios from "axios"
   const form = document.querySelector("form#contact")
   form?.addEventListener("submit", async (event) => {
+    const submitButton = document.getElementById(
+      "contact-submit"
+    ) as HTMLButtonElement
+    submitButton.disabled = true
+    submitButton.textContent = "送信中..."
     event.preventDefault()
     const nameElement = document.getElementById("name") as HTMLInputElement
     const emailElement = document.getElementById("email") as HTMLInputElement
@@ -406,5 +412,9 @@ const primaryColor = "#3e62ad"
     await axios.post(import.meta.env.PUBLIC_SLACK_URL, jsonBody, {
       withCredentials: false,
     })
+    const contactForm = document.getElementById("contact")
+    if (contactForm) contactForm.style.display = "none"
+    const doneMessage = document.getElementById("done-message")
+    if (doneMessage) doneMessage.textContent = "送信完了"
   })
 </script>
