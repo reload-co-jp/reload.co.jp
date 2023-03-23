@@ -1,15 +1,222 @@
 ---
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<style>
+  html {
+    background-color: #111;
+  }
+  body {
+    background-color: #222;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #bbd;
+  }
+  header {
+    background-color: #111;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  h2 {
+    border-bottom: solid #ccc 1px;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+  main {
+  }
+  section,
+  nav,
+  aside {
+    margin: auto;
+    max-width: 64rem;
+  }
+  section {
+    padding: 4rem 1rem;
+  }
+  .hero {
+    background-image: url(/images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 27rem);
+    padding: 12rem 0;
+  }
+  table {
+  }
+  th,
+  td {
+    min-width: 4rem;
+    padding: 0.5rem;
+  }
+  footer {
+    background-color: #111;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+</style>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      data-hid="description"
+      name="description"
+      content="株式会社リロードは新しい可能性を提供するシステム会社です。"
+    />
+    <meta
+      data-hid="og:site_name"
+      property="og:site_name"
+      content="株式会社リロード"
+    />
+    <meta data-hid="og:type" property="og:type" content="website" /><meta
+      data-hid="og:url"
+      property="og:url"
+      content="https://reload.co.jp"
+    />
+    <meta data-hid="og:title" property="og:title" content="株式会社リロード" />
+    <meta
+      data-hid="og:description"
+      property="og:description"
+      content="株式会社リロードは新しい可能性を提供するシステム会社です。"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@reload_co_jp" />
+    <title>Reload, Inc.</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>株式会社リロード - Reload, Inc.</h1>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <section>
+          <h2>Reload provides new choice and new possibility.</h2>
+          <p>
+            株式会社リロードはシステムを通じて新しい選択肢と新しい可能性を与える会社です。
+          </p>
+          <p>
+            リロード（reload）とは、「再び積み込む」という意味です。主にWebでは一度読み込んだデータを更新することを指します。
+            株式会社リロードでは、リロードという言葉のように存在しているしくみ・サービスを再考し、刷新することを提案することで新しい選択肢と可能性を与えていくことを目指しています。
+          </p>
+        </section>
+      </div>
+      <section>
+        <h2>Services</h2>
+        <div>
+          <h3>Mobile Application Development</h3>
+          <p>
+            iOSアプリ、Androidアプリを中心にスマートフォンアプリケーションをバックエンドのウェブアプリケーションとともに設計開発を行っています。
+          </p>
+        </div>
+        <div>
+          <h3>Web Application Development</h3>
+          <p></p>
+        </div>
+        <div>
+          <h3>Management Media</h3>
+          <p>
+            スマートフォンアプリケーションを中心に多数のコンシューマー向けサービスの企画・開発・運営を行っています。
+          </p>
+        </div>
+        <div>
+          <h3>Consulting</h3><p>
+            いままでのサービス開発の経験をもとに新規サービスのビジネスモデルからの検討や現状のビジネスの効率化を支援などの企画設計コンサルティングを行っています。
+          </p>
+        </div>
+        <div>
+          <h3>Cafe</h3>
+          <p>
+            「仕事をしやすく、それでいて遊びやすいような場所」を目指し、神田でコワーキングカフェを運営しています。
+          </p>
+          <p>
+            <a href="//fffff-cafe.com">FFFFF Cafe</a>
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Works</h2>
+        <div>
+          <h3>Bokete</h3>
+        </div>
+        <div>
+          <h3>Aroma intelligence</h3>
+        </div>
+      </section>
+      <section>
+        <h2>Recruit</h2>
+        <p>
+          リロードという箱にはまだなにもありません。会社のこれからを一緒につくるひとを探しています。
+        </p>
+        <p>
+          株式会社リロードではともに新しいの可能性を創る仲間を探しています。
+          新卒／既卒を問わず、年間を通じて多職種の人材を募集しております。
+          ミッションに興味持った方、零細企業で力を試してみたい方はお気軽にご連絡ください。
+        </p>
+      </section>
+      <section>
+        <h2>About</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>社名</th>
+              <td>株式会社リロード / Reload, Inc.</td>
+            </tr>
+            <tr>
+              <th>代表者</th>
+              <td>山本翔平</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2014年8月22日</td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>インターネット関連事業</td>
+            </tr>
+            <tr>
+              <th>資本金</th>
+              <td>2,000,000円</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>〒101-0046 東京都千代田区神田多町2-9-6 第２田中ビル</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <form>
+          <div>
+            <label>お名前</label>
+            <input />
+          </div>
+          <div>
+            <label>メールアドレス</label>
+            <input />
+          </div>
+          <div>
+            <label>お問い合わせ内容</label>
+            <textarea></textarea>
+          </div>
+          <div>
+            <button>送信</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
+<footer>
+  <aside>
+    <p>&copy;&nbsp;Reload, Inc.</p>
+  </aside>
+</footer>
