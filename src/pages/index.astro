@@ -404,12 +404,8 @@ const primaryColor = "#3e62ad"
         },
       ],
     })
-    await axios.post(
-      "https://hooks.slack.com/services/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",
-      jsonBody,
-      {
-        withCredentials: false,
-      }
-    )
+    await axios.post(import.meta.env.PUBLIC_SLACK_URL, jsonBody, {
+      withCredentials: false,
+    })
   })
 </script>
