@@ -91,6 +91,15 @@ const primaryColor = "#3e62ad"
     padding: 4rem 1rem;
     text-align: center;
   }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .box {
+      min-width: 320px;
+      width: 50%;
+    }
+  }
 </style>
 <html lang="ja">
   <head>
@@ -144,37 +153,39 @@ const primaryColor = "#3e62ad"
       </div>
       <section>
         <h2>Services</h2>
-        <div>
-          <h3>Mobile Application Development</h3>
-          <p>
-            iOSアプリ、Androidアプリを中心にスマートフォンアプリケーションをバックエンドのウェブアプリケーションとともに設計開発を行っています。
-          </p>
-        </div>
-        <div>
-          <h3>Web Application Development</h3>
-          <p>
-            コンシューマー向けサービスから社内向けツール、DX支援などフロントエンドからバックエンドを通してWebアプリケーションを用いた課題解決を行っています。
-          </p>
-        </div>
-        <div>
-          <h3>Management Media</h3>
-          <p>
-            スマートフォンアプリケーションを中心に多数のコンシューマー向けサービスの企画・開発・運営を行っています。
-          </p>
-        </div>
-        <div>
-          <h3>Consulting</h3><p>
-            いままでのサービス開発の経験をもとに新規サービスのビジネスモデルからの検討や現状のビジネスの効率化を支援などの企画設計コンサルティングを行っています。
-          </p>
-        </div>
-        <div>
-          <h3>Cafe</h3>
-          <p>
-            「仕事をしやすく、それでいて遊びやすいような場所」を目指し、神田でコワーキングカフェを運営しています。
-          </p>
-          <p>
-            <a href="//fffff-cafe.com" target="_blank">FFFFF Cafe</a>
-          </p>
+        <div class="boxes">
+          <div class="box">
+            <h3>Mobile Application Development</h3>
+            <p>
+              iOSアプリ、Androidアプリを中心にスマートフォンアプリケーションをバックエンドのウェブアプリケーションとともに設計開発を行っています。
+            </p>
+          </div>
+          <div class="box">
+            <h3>Web Application Development</h3>
+            <p>
+              コンシューマー向けサービスから社内向けツール、DX支援などフロントエンドからバックエンドを通してWebアプリケーションを用いた課題解決を行っています。
+            </p>
+          </div>
+          <div class="box">
+            <h3>Management Media</h3>
+            <p>
+              スマートフォンアプリケーションを中心に多数のコンシューマー向けサービスの企画・開発・運営を行っています。
+            </p>
+          </div>
+          <div class="box">
+            <h3>Consulting</h3><p>
+              いままでのサービス開発の経験をもとに新規サービスのビジネスモデルからの検討や現状のビジネスの効率化を支援などの企画設計コンサルティングを行っています。
+            </p>
+          </div>
+          <div class="box">
+            <h3>Cafe</h3>
+            <p>
+              「仕事をしやすく、それでいて遊びやすいような場所」を目指し、神田でコワーキングカフェを運営しています。
+            </p>
+            <p>
+              <a href="//fffff-cafe.com" target="_blank">FFFFF Cafe</a>
+            </p>
+          </div>
         </div>
       </section>
       <section>
