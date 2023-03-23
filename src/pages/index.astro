@@ -1,12 +1,12 @@
 ---
-const primaryColor = "#3e62ad"
+const primaryColor = '#3e62ad'
 ---
 
 <style define:vars={{ primaryColor }}>
-  @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
   * {
     box-sizing: border-box;
-    font-family: "Sawarabi Gothic", sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
     line-height: 1.5;
   }
   html {
@@ -137,20 +137,13 @@ const primaryColor = "#3e62ad"
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
     <meta
       data-hid="description"
       name="description"
       content="株式会社リロードは新しい可能性を提供するシステム会社です。"
     />
-    <meta
-      data-hid="og:site_name"
-      property="og:site_name"
-      content="株式会社リロード"
-    />
+    <meta data-hid="og:site_name" property="og:site_name" content="株式会社リロード" />
     <meta data-hid="og:type" property="og:type" content="website" /><meta
       data-hid="og:url"
       property="og:url"
@@ -178,9 +171,7 @@ const primaryColor = "#3e62ad"
           <h2>
             <strong>Reload</strong> provides new choice and new possibility.
           </h2>
-          <p>
-            株式会社リロードはシステムを通じて新しい選択肢と新しい可能性を与える会社です。
-          </p>
+          <p>株式会社リロードはシステムを通じて新しい選択肢と新しい可能性を与える会社です。</p>
           <p>
             リロード（reload）とは、「再び積み込む」という意味です。主にWebでは一度読み込んだデータを更新することを指します。
             株式会社リロードでは、リロードという言葉のように存在しているしくみ・サービスを再考し、刷新することを提案することで新しい選択肢と可能性を与えていくことを目指しています。
@@ -229,9 +220,7 @@ const primaryColor = "#3e62ad"
         <div class="boxes">
           <div class="box">
             <h3>写真で一言ボケて</h3>
-            <p>
-              ユーザーの投稿した写真に対してユーザーがボケを投稿し評価し合う大喜利サービス
-            </p>
+            <p>ユーザーの投稿した写真に対してユーザーがボケを投稿し評価し合う大喜利サービス</p>
             <p><a href="//bokete.jp" target="_blank">ボケて</a></p>
           </div>
           <div class="box">
@@ -244,15 +233,11 @@ const primaryColor = "#3e62ad"
           </div>
           <div class="box">
             <h3>マッチングアプリ</h3>
-            <p>
-              iPhoneアプリ上で動作するマッチングアプリの開発・設計をバックエンドを含め開発
-            </p>
+            <p>iPhoneアプリ上で動作するマッチングアプリの開発・設計をバックエンドを含め開発</p>
           </div>
           <div class="box">
             <h3>広報担当書支援ツール</h3>
-            <p>
-              ソーシャルメディアなどの情報の収集・分析を行い広報担当者のセレンディピティなど想起させるツールの開発
-            </p>
+            <p>ソーシャルメディアなどの情報の収集・分析を行い広報担当者のセレンディピティなど想起させるツールの開発</p>
           </div>
           <div class="box">
             <h3>書籍紹介メディア</h3>
@@ -274,9 +259,7 @@ const primaryColor = "#3e62ad"
       </section>
       <section>
         <h2>Recruit</h2>
-        <p>
-          リロードという箱にはまだなにもありません。会社のこれからを一緒につくるひとを探しています。
-        </p>
+        <p>リロードという箱にはまだなにもありません。会社のこれからを一緒につくるひとを探しています。</p>
         <p>
           株式会社リロードではともに新しいの可能性を創る仲間を探しています。
           新卒／既卒を問わず、年間を通じて多職種の人材を募集しております。
@@ -391,51 +374,47 @@ const primaryColor = "#3e62ad"
 </footer>
 
 <script>
-  import axios from "axios"
-  const form = document.querySelector("form#contact")
-  form?.addEventListener("submit", async (event) => {
-    const submitButton = document.getElementById(
-      "contact-submit"
-    ) as HTMLButtonElement
+  import axios from 'axios'
+  const form = document.querySelector('form#contact')
+  form?.addEventListener('submit', async (event) => {
+    const submitButton = document.getElementById('contact-submit') as HTMLButtonElement
     submitButton.disabled = true
-    submitButton.textContent = "送信中..."
+    submitButton.textContent = '送信中...'
     event.preventDefault()
-    const nameElement = document.getElementById("name") as HTMLInputElement
-    const emailElement = document.getElementById("email") as HTMLInputElement
-    const contentElement = document.getElementById(
-      "content"
-    ) as HTMLTextAreaElement
+    const nameElement = document.getElementById('name') as HTMLInputElement
+    const emailElement = document.getElementById('email') as HTMLInputElement
+    const contentElement = document.getElementById('content') as HTMLTextAreaElement
     const jsonBody = JSON.stringify({
-      channel: "#info",
-      username: "Inquiry",
-      text: "お問い合わせが届きました",
-      icon_emoji: ":ghost:",
+      channel: '#info',
+      username: 'Inquiry',
+      text: 'お問い合わせが届きました',
+      icon_emoji: ':ghost:',
       attachments: [
         {
           fields: [
             {
-              title: "名前",
+              title: '名前',
               value: nameElement.value,
             },
             {
-              title: "メールアドレス",
+              title: 'メールアドレス',
               value: emailElement.value,
             },
             {
-              title: "内容",
+              title: '内容',
               value: contentElement.value,
             },
           ],
-          footer: "Reload inquiry",
+          footer: 'Reload inquiry',
         },
       ],
     })
     await axios.post(import.meta.env.PUBLIC_SLACK_URL, jsonBody, {
       withCredentials: false,
     })
-    const contactForm = document.getElementById("contact")
-    if (contactForm) contactForm.style.display = "none"
-    const doneMessage = document.getElementById("done-message")
-    if (doneMessage) doneMessage.textContent = "送信完了"
+    const contactForm = document.getElementById('contact')
+    if (contactForm) contactForm.style.display = 'none'
+    const doneMessage = document.getElementById('done-message')
+    if (doneMessage) doneMessage.textContent = '送信完了'
   })
 </script>
