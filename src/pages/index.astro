@@ -289,7 +289,13 @@
     })
     axios.post(
       "https://hooks.slack.com/services/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",
-      jsonBody
+      jsonBody,
+      {
+        withCredentials: false,
+        headers: {
+          "Content-Type": undefined,
+        },
+      }
     )
   })
 </script>
