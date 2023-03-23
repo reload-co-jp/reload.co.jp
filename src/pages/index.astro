@@ -1,12 +1,12 @@
 ---
-const primaryColor = '#3e62ad'
+const primaryColor = "#3e62ad"
 ---
 
 <style define:vars={{ primaryColor }}>
-  @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
   * {
     box-sizing: border-box;
-    font-family: 'Sawarabi Gothic', sans-serif;
+    font-family: "Sawarabi Gothic", sans-serif;
     line-height: 1.5;
   }
   html {
@@ -374,47 +374,47 @@ const primaryColor = '#3e62ad'
 </footer>
 
 <script>
-  import axios from 'axios'
-  const form = document.querySelector('form#contact')
-  form?.addEventListener('submit', async (event) => {
-    const submitButton = document.getElementById('contact-submit') as HTMLButtonElement
+  import axios from "axios"
+  const form = document.querySelector("form#contact")
+  form?.addEventListener("submit", async (event) => {
+    const submitButton = document.getElementById("contact-submit") as HTMLButtonElement
     submitButton.disabled = true
-    submitButton.textContent = '送信中...'
+    submitButton.textContent = "送信中..."
     event.preventDefault()
-    const nameElement = document.getElementById('name') as HTMLInputElement
-    const emailElement = document.getElementById('email') as HTMLInputElement
-    const contentElement = document.getElementById('content') as HTMLTextAreaElement
+    const nameElement = document.getElementById("name") as HTMLInputElement
+    const emailElement = document.getElementById("email") as HTMLInputElement
+    const contentElement = document.getElementById("content") as HTMLTextAreaElement
     const jsonBody = JSON.stringify({
-      channel: '#info',
-      username: 'Inquiry',
-      text: 'お問い合わせが届きました',
-      icon_emoji: ':ghost:',
+      channel: "#info",
+      username: "Inquiry",
+      text: "お問い合わせが届きました",
+      icon_emoji: ":ghost:",
       attachments: [
         {
           fields: [
             {
-              title: '名前',
+              title: "名前",
               value: nameElement.value,
             },
             {
-              title: 'メールアドレス',
+              title: "メールアドレス",
               value: emailElement.value,
             },
             {
-              title: '内容',
+              title: "内容",
               value: contentElement.value,
             },
           ],
-          footer: 'Reload inquiry',
+          footer: "Reload inquiry",
         },
       ],
     })
     await axios.post(import.meta.env.PUBLIC_SLACK_URL, jsonBody, {
       withCredentials: false,
     })
-    const contactForm = document.getElementById('contact')
-    if (contactForm) contactForm.style.display = 'none'
-    const doneMessage = document.getElementById('done-message')
-    if (doneMessage) doneMessage.textContent = '送信完了'
+    const contactForm = document.getElementById("contact")
+    if (contactForm) contactForm.style.display = "none"
+    const doneMessage = document.getElementById("done-message")
+    if (doneMessage) doneMessage.textContent = "送信完了"
   })
 </script>
