@@ -44,6 +44,10 @@ const primaryColor = "#3e62ad"
   section {
     padding: 4rem 1rem;
   }
+  strong {
+    color: var(--primaryColor);
+    text-shadow: 1px 1px 1px rgba(224, 224, 224, 0.4);
+  }
   .hero {
     background-image: url(/images/header.jpg);
     background-position: center;
@@ -52,9 +56,11 @@ const primaryColor = "#3e62ad"
     padding: 12rem 0;
   }
   table {
+    width: 100%;
   }
   th,
   td {
+    border-bottom: solid 1px #444;
     min-width: 4rem;
     padding: 0.5rem;
   }
@@ -157,7 +163,9 @@ const primaryColor = "#3e62ad"
     <main>
       <div class="hero">
         <section>
-          <h2>Reload provides new choice and new possibility.</h2>
+          <h2>
+            <strong>Reload</strong> provides new choice and new possibility.
+          </h2>
           <p>
             株式会社リロードはシステムを通じて新しい選択肢と新しい可能性を与える会社です。
           </p>
@@ -250,6 +258,44 @@ const primaryColor = "#3e62ad"
           新卒／既卒を問わず、年間を通じて多職種の人材を募集しております。
           ミッションに興味持った方、零細企業で力を試してみたい方はお気軽にご連絡ください。
         </p>
+        <table>
+          <caption>ソフトウェアエンジニア/コンサルタント</caption>
+          <tbody>
+            <tr>
+              <th>仕事内容</th>
+              <td>
+                <li>ITコンサルティング</li>
+                <li>WEBサービス設計開発</li>
+                <li>新規サービス企画・設計・開発・運用</li>
+                など
+              </td>
+            </tr>
+            <tr>
+              <th>応募資格</th>
+              <td>大学・大学院卒業者（予定者）</td>
+            </tr>
+            <tr>
+              <th>雇用体系</th>
+              <td>正社員</td>
+            </tr>
+            <tr>
+              <th>勤務地</th>
+              <td>神田</td>
+            </tr>
+            <tr>
+              <th>給与</th>
+              <td>月給制 年収400万〜 / 時給制 1200円〜</td>
+            </tr>
+            <tr>
+              <th>求める人物</th>
+              <td>
+                <li>大胆にチャレンジし、多くの失敗から学べる方</li>
+                <li>インターネットが好きな方</li>
+                <li>自分で考え自分で行動できる方</li>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <section>
         <h2>About</h2>
