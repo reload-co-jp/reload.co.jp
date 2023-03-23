@@ -404,14 +404,11 @@ const primaryColor = "#3e62ad"
         },
       ],
     })
-    axios.post(
-      "https://hooks.slack.com/services/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",
+    await axios.post(
+      "https://hooks.slack.com/services/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",
       jsonBody,
       {
         withCredentials: false,
-        headers: {
-          "Content-Type": undefined,
-        },
       }
     )
   })
