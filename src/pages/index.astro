@@ -1,7 +1,8 @@
 ---
+const primaryColor = "#3e62ad"
 ---
 
-<style>
+<style define:vars={{ primaryColor }}>
   @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
   * {
     box-sizing: border-box;
@@ -74,7 +75,7 @@
     }
   }
   button {
-    background-color: #3e62ad;
+    background-color: var(--primaryColor);
     border: none;
     border-radius: 0.2rem;
     color: #f0f0f0;
