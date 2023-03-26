@@ -3,7 +3,6 @@ const primaryColor = "#3e62ad"
 ---
 
 <style define:vars={{ primaryColor }}>
-  @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
   * {
     box-sizing: border-box;
     font-family: "Sawarabi Gothic", sans-serif;
@@ -159,6 +158,16 @@ const primaryColor = "#3e62ad"
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@reload_co_jp" />
     <title>Reload, Inc.</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
     <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-NGM16ZWHTR"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || []
