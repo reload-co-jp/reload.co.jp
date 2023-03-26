@@ -999,6 +999,11 @@ astro-eslint-parser@^0.13.1:
     espree "^9.0.0"
     semver "^7.3.8"
 
+astro-google-fonts-optimizer@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/astro-google-fonts-optimizer/-/astro-google-fonts-optimizer-0.2.2.tgz#93eff2a5c17713064675f70bce4c6f2fc4c2c50f"
+  integrity sha512-YQxp/ExF3NzUomAGuu1VKecO7/ETRnhnE50gqwAqfpbGPZFj4MYa4XxK1ukBg3R63QmKuE5uurOiKmXiLzttuw==
+
 astro@^2.1.7:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/astro/-/astro-2.1.7.tgz#d28f1b3529595c75bdc73c58b1a5f89aeb8f70fa"

@@ -1,5 +1,6 @@
 ---
 const primaryColor = "#3e62ad"
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
 ---
 
 <html lang="ja">
@@ -28,16 +29,7 @@ const primaryColor = "#3e62ad"
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@reload_co_jp" />
     <title>Reload, Inc.</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
+    <GoogleFontsOptimizer url="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" />
     <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-NGM16ZWHTR"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || []
@@ -258,187 +250,186 @@ const primaryColor = "#3e62ad"
         <p id="done-message"></p>
       </section>
     </main>
-  </body>
-</html>
-<footer>
-  <aside>
-    <p>&copy;&nbsp;Reload, Inc.</p>
-  </aside>
-</footer>
+  </body><footer>
+    <aside>
+      <p>&copy;&nbsp;Reload, Inc.</p>
+    </aside>
+  </footer>
 
-<style define:vars={{ primaryColor }}>
-  * {
-    box-sizing: border-box;
-    font-family: "Sawarabi Gothic", sans-serif;
-    line-height: 1.5;
-  }
-  html {
-    background-color: #111;
-  }
-  body {
-    background-color: #222;
-    color: #ccc;
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    color: #bbd;
-  }
-  header {
-    background-color: #111;
-    padding: 1rem;
-  }
-  h1 {
-    font-size: 1rem;
-    margin: 0;
-  }
-  h2 {
-    border-bottom: solid #ccc 1px;
-    font-size: 2rem;
-    padding: 0;
-  }
-  main {
-  }
-  section,
-  nav,
-  aside {
-    margin: auto;
-    max-width: 64rem;
-  }
-  section {
-    padding: 4rem 1rem;
-  }
-  strong {
-    color: var(--primaryColor);
-    text-shadow: 1px 1px 1px rgba(224, 224, 224, 0.4);
-  }
-  .hero {
-    background-image: url(/images/header.jpg);
-    background-position: center;
-    background-size: cover;
-    height: calc(100vh - 4rem);
-    padding: 15% 0;
-  }
-  table {
-    width: 100%;
-  }
-  th,
-  td {
-    border-bottom: solid 1px #444;
-    min-width: 4rem;
-    padding: 0.5rem;
-  }
-  label {
-    font-size: 0.9rem;
-  }
-  input,
-  textarea {
-    background-color: #222;
-    border-radius: 2px;
-    border: 1px solid #dbdbdb;
-    color: #f0f0f0;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-    padding: 0.25rem 0.5rem;
-    width: 100%;
-    &:active,
-    &:focus {
-      appearance: none;
-      border: 1px solid #999;
-      outline: none;
+  <style define:vars={{ primaryColor }}>
+    * {
+      box-sizing: border-box;
+      font-family: "Sawarabi Gothic", sans-serif;
+      line-height: 1.5;
     }
-  }
-  button {
-    background-color: var(--primaryColor);
-    border: none;
-    border-radius: 0.2rem;
-    color: #f0f0f0;
-    cursor: pointer;
-    display: block;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    width: 100%;
-  }
-  footer {
-    background-color: #111;
-    padding: 4rem 1rem;
-    text-align: center;
-  }
-  .boxes {
-    display: flex;
-    gap: 3%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    .box {
-      background: #333;
-      border: solid 1px #f0f0f0;
-      margin: 0.5rem 0;
-      min-width: 320px;
-      padding: 0 1rem 1rem;
-      width: 48%;
+    html {
+      background-color: #111;
     }
-  }
-  iframe {
-    border: none;
-    display: block;
-    margin: 0.5rem auto;
-    max-width: min(960px, 100%);
-  }
-  .member-image {
-    display: block;
-    max-width: 6rem;
-    width: 100%;
-    > img {
-      display: block;
+    body {
+      background-color: #222;
+      color: #ccc;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: #bbd;
+    }
+    header {
+      background-color: #111;
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 1rem;
+      margin: 0;
+    }
+    h2 {
+      border-bottom: solid #ccc 1px;
+      font-size: 2rem;
+      padding: 0;
+    }
+    main {
+    }
+    section,
+    nav,
+    aside {
+      margin: auto;
+      max-width: 64rem;
+    }
+    section {
+      padding: 4rem 1rem;
+    }
+    strong {
+      color: var(--primaryColor);
+      text-shadow: 1px 1px 1px rgba(224, 224, 224, 0.4);
+    }
+    .hero {
+      background-image: url(/images/header.jpg);
+      background-position: center;
+      background-size: cover;
+      height: calc(100vh - 4rem);
+      padding: 15% 0;
+    }
+    table {
       width: 100%;
     }
-  }
-</style>
+    th,
+    td {
+      border-bottom: solid 1px #444;
+      min-width: 4rem;
+      padding: 0.5rem;
+    }
+    label {
+      font-size: 0.9rem;
+    }
+    input,
+    textarea {
+      background-color: #222;
+      border-radius: 2px;
+      border: 1px solid #dbdbdb;
+      color: #f0f0f0;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+      padding: 0.25rem 0.5rem;
+      width: 100%;
+      &:active,
+      &:focus {
+        appearance: none;
+        border: 1px solid #999;
+        outline: none;
+      }
+    }
+    button {
+      background-color: var(--primaryColor);
+      border: none;
+      border-radius: 0.2rem;
+      color: #f0f0f0;
+      cursor: pointer;
+      display: block;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      width: 100%;
+    }
+    footer {
+      background-color: #111;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .boxes {
+      display: flex;
+      gap: 3%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* justify-content: space-around; */
+      .box {
+        background: #333;
+        border: solid 1px #f0f0f0;
+        margin: 0.5rem 0;
+        min-width: 320px;
+        padding: 0 1rem 1rem;
+        width: 48%;
+      }
+    }
+    iframe {
+      border: none;
+      display: block;
+      margin: 0.5rem auto;
+      max-width: min(960px, 100%);
+    }
+    .member-image {
+      display: block;
+      max-width: 6rem;
+      width: 100%;
+      > img {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
 
-<script>
-  import axios from "axios"
-  const form = document.querySelector("form#contact")
-  form?.addEventListener("submit", async (event) => {
-    const submitButton = document.getElementById("contact-submit") as HTMLButtonElement
-    submitButton.disabled = true
-    submitButton.textContent = "送信中..."
-    event.preventDefault()
-    const nameElement = document.getElementById("name") as HTMLInputElement
-    const emailElement = document.getElementById("email") as HTMLInputElement
-    const contentElement = document.getElementById("content") as HTMLTextAreaElement
-    const jsonBody = JSON.stringify({
-      channel: "#info",
-      username: "Inquiry",
-      text: "お問い合わせが届きました",
-      icon_emoji: ":ghost:",
-      attachments: [
-        {
-          fields: [
-            {
-              title: "名前",
-              value: nameElement.value,
-            },
-            {
-              title: "メールアドレス",
-              value: emailElement.value,
-            },
-            {
-              title: "内容",
-              value: contentElement.value,
-            },
-          ],
-          footer: "Reload inquiry",
-        },
-      ],
+  <script>
+    import axios from "axios"
+    const form = document.querySelector("form#contact")
+    form?.addEventListener("submit", async (event) => {
+      const submitButton = document.getElementById("contact-submit") as HTMLButtonElement
+      submitButton.disabled = true
+      submitButton.textContent = "送信中..."
+      event.preventDefault()
+      const nameElement = document.getElementById("name") as HTMLInputElement
+      const emailElement = document.getElementById("email") as HTMLInputElement
+      const contentElement = document.getElementById("content") as HTMLTextAreaElement
+      const jsonBody = JSON.stringify({
+        channel: "#info",
+        username: "Inquiry",
+        text: "お問い合わせが届きました",
+        icon_emoji: ":ghost:",
+        attachments: [
+          {
+            fields: [
+              {
+                title: "名前",
+                value: nameElement.value,
+              },
+              {
+                title: "メールアドレス",
+                value: emailElement.value,
+              },
+              {
+                title: "内容",
+                value: contentElement.value,
+              },
+            ],
+            footer: "Reload inquiry",
+          },
+        ],
+      })
+      await axios.post(import.meta.env.PUBLIC_SLACK_URL, jsonBody, {
+        withCredentials: false,
+      })
+      const contactForm = document.getElementById("contact")
+      if (contactForm) contactForm.style.display = "none"
+      const doneMessage = document.getElementById("done-message")
+      if (doneMessage) doneMessage.textContent = "送信完了"
     })
-    await axios.post(import.meta.env.PUBLIC_SLACK_URL, jsonBody, {
-      withCredentials: false,
-    })
-    const contactForm = document.getElementById("contact")
-    if (contactForm) contactForm.style.display = "none"
-    const doneMessage = document.getElementById("done-message")
-    if (doneMessage) doneMessage.textContent = "送信完了"
-  })
-</script>
+  </script>
+</html>
