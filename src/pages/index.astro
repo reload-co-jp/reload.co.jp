@@ -49,9 +49,9 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
     <main>
       <div class="hero">
         <section>
-          <h2>
+          <h3>
             <strong>Reload</strong> provides new choice and new possibility.
-          </h2>
+          </h3>
           <p>株式会社リロードはシステムを通じて新しい選択肢と新しい可能性を与える会社です。</p>
           <p>
             リロード（reload）とは、「再び積み込む」という意味です。主にWebでは一度読み込んだデータを更新することを指します。
@@ -289,8 +289,12 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
     }
     h2 {
       border-bottom: solid #ccc 1px;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      font-weight: normal;
       padding: 0;
+    }
+    h3 {
+      font-size: 1.75rem;
     }
     main {
     }
@@ -308,17 +312,18 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
       text-shadow: 1px 1px 1px rgba(224, 224, 224, 0.4);
     }
     .hero {
-      height: calc(100dvh - 3rem);
+      height: calc(100dvh - 4rem);
       padding: 15% 0;
     }
     table {
+      border-spacing: 0;
       width: 100%;
     }
     th,
     td {
-      border-bottom: solid 1px #444;
-      min-width: 4rem;
-      padding: 0.5rem;
+      border-bottom: solid 1px rgba(255,255,255,0.2);
+      min-width: 6rem;
+      padding: .5rem;
     }
     label {
       font-size: 0.9rem;
@@ -326,8 +331,8 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
     input,
     textarea {
       background-color: rgba(0,0,0,0.5);
-      border-radius: 2px;
-      border: 1px solid #dbdbdb;
+      border-radius: none;
+      border: 1px solid rgba(224, 224, 224, 0.4);
       color: #f0f0f0;
       font-size: 1rem;
       line-height: 1.5;
@@ -344,7 +349,7 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
     button {
       background-color: var(--primaryColor);
       border: none;
-      border-radius: 0.2rem;
+      border-radius: none;
       color: #f0f0f0;
       cursor: pointer;
       display: block;
@@ -366,7 +371,7 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
         background: rgba(0,0,0,0.5);
         border: solid 1px #f0f0f0;
         margin: 0.5rem 0;
-        min-width: 320px;
+        min-width: 24rem;
         padding: 0 1rem 1rem;
         width: 48%;
       }
