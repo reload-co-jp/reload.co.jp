@@ -266,6 +266,12 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
       background-color: #111;
     }
     body {
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/images/header.jpg);
+      background-position: center;
+      background-size: cover;
       background-color: #222;
       color: #ccc;
       margin: 0;
@@ -275,7 +281,6 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
       color: #bbd;
     }
     header {
-      background-color: #111;
       padding: 1rem;
     }
     h1 {
@@ -303,10 +308,7 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
       text-shadow: 1px 1px 1px rgba(224, 224, 224, 0.4);
     }
     .hero {
-      background-image: url(/images/header.jpg);
-      background-position: center;
-      background-size: cover;
-      height: calc(100vh - 4rem);
+      height: calc(100dvh - 3rem);
       padding: 15% 0;
     }
     table {
@@ -323,7 +325,7 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
     }
     input,
     textarea {
-      background-color: #222;
+      background-color: rgba(0,0,0,0.5);
       border-radius: 2px;
       border: 1px solid #dbdbdb;
       color: #f0f0f0;
@@ -351,7 +353,6 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
       width: 100%;
     }
     footer {
-      background-color: #111;
       padding: 4rem 1rem;
       text-align: center;
     }
@@ -360,9 +361,9 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer"
       gap: 3%;
       flex-direction: row;
       flex-wrap: wrap;
-      /* justify-content: space-around; */
+      justify-content: space-around;
       .box {
-        background: #333;
+        background: rgba(0,0,0,0.5);
         border: solid 1px #f0f0f0;
         margin: 0.5rem 0;
         min-width: 320px;
