@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@astrojs/partytown": "^1.1.1",
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^5.56.0",
     "astro-compress": "^1.1.35",
     "astro-google-fonts-optimizer": "^0.2.2",
