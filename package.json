@@ -30,7 +30,7 @@
     "eslint-plugin-import": "^2.29.1",
     "prettier": "^3.2.5",
     "postcss-html": "^1.6.0",
-    "prettier-plugin-astro": "^0.12.3",
+    "prettier-plugin-astro": "^0.13.0",
     "stylelint-config-recess-order": "^4.4.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-no-unsupported-browser-features": "^8.0.0",
