@@ -18,8 +18,8 @@ dependencies:
     specifier: ^6.0.3
     version: 6.0.3(postcss@8.4.38)
   postcss-nesting:
-    specifier: ^12.1.1
-    version: 12.1.1(postcss@8.4.38)
+    specifier: ^12.1.2
+    version: 12.1.2(postcss@8.4.38)
 
 devDependencies:
   '@astrojs/partytown':
@@ -5069,8 +5069,8 @@ packages:
       postcss-selector-parser: 6.0.15
     dev: false
 
-  /postcss-nesting@12.1.1(postcss@8.4.38):
-    resolution: {integrity: sha512-qc74KvIAQNa5ujZKG1UV286dhaDW6basbUy2i9AzNU/T8C9hpvGu9NZzm1SfePe2yP7sPYgpA8d4sPVopn2Hhw==}
+  /postcss-nesting@12.1.2(postcss@8.4.38):
+    resolution: {integrity: sha512-FUmTHGDNundodutB4PUBxt/EPuhgtpk8FJGRsBhOuy+6FnkR2A8RZWIsyyy6XmhvX2DZQQWIkvu+HB4IbJm+Ew==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
@@ -6596,41 +6596,6 @@ packages:
       '@types/unist': 3.0.2
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
-
-  /vite@5.0.11:
-    resolution: {integrity: sha512-XBMnDjZcNAw/G1gEiskiM1v6yzM4GE5aMGvhWTlHAYYhxb7S3/V1s3m2LDHa8Vh6yIWYYB0iJwsEaS523c4oYA==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': ^18.0.0 || >=20.0.0
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.19.11
-      postcss: 8.4.38
-      rollup: 4.9.4
-    optionalDependencies:
-      fsevents: 2.3.3
-    dev: false
 
   /vite@5.2.8(lightningcss@1.24.1)(terser@5.30.3):
     resolution: {integrity: sha512-OyZR+c1CE8yeHw5V5t59aXsUPPVTHMDjEZz8MgguLL/Q7NblxhZUlTu9xSPqlsUO/y+X7dlU05jdhvyycD55DA==}
