@@ -13,27 +13,27 @@
     "lint:style": "stylelint \"./src/**/*.{css,scss,astro}\" --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "astro": "^4.6.3",
-    "autoprefixer": "^10.4.16",
-    "axios": "^1.6.5",
-    "cssnano": "^6.0.3",
-    "postcss-nesting": "^12.1.1"
+    "astro": "^4.16.19",
+    "autoprefixer": "^10.4.23",
+    "axios": "^1.13.2",
+    "cssnano": "^6.1.2",
+    "postcss-nesting": "^12.1.5"
   },
   "devDependencies": {
-    "@astrojs/partytown": "^2.0.4",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "@typescript-eslint/parser": "^6.18.1",
-    "astro-compress": "^2.2.22",
+    "@astrojs/partytown": "^2.1.4",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "astro-compress": "^2.3.8",
     "astro-google-fonts-optimizer": "^0.2.2",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.1",
     "eslint-plugin-astro": "^0.34.0",
-    "eslint-plugin-import": "^2.29.1",
-    "prettier": "^3.2.5",
-    "postcss-html": "^1.6.0",
+    "eslint-plugin-import": "^2.32.0",
+    "postcss-html": "^1.8.0",
+    "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.13.0",
-    "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-recess-order": "^5.1.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
-    "stylelint-no-unsupported-browser-features": "^8.0.0",
-    "stylelint-prettier": "^5.0.0"
+    "stylelint-no-unsupported-browser-features": "^8.0.5",
+    "stylelint-prettier": "^5.0.3"
   }
 }
