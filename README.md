@@ -6,22 +6,23 @@ https://reload.co.jp
 
 ```
 /
+├── app/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+├── lib/
 ├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
 └── package.json
 ```
 
 ## Commands
 
-| Command          | Action                                           |
-| :--------------- | :----------------------------------------------- |
-| `yarn`           | Installs dependencies                            |
-| `yarn dev`       | Starts local dev server at `localhost:3000`      |
-| `yarn build`     | Build your production site to `./dist/`          |
-| `yarn preview`   | Preview your build locally, before deploying     |
-| `yarn astro ...` | Run CLI commands like `astro add`, `astro check` |
+| Command        | Action                                       |
+| :-------------- | :-------------------------------------------- |
+| `pnpm install`  | Installs dependencies                        |
+| `pnpm dev`      | Starts local dev server at `localhost:3000`  |
+| `pnpm build`    | Build static site to `./out/`                |
+| `pnpm start`    | Starts production server (not used for deploy) |
 
 ## Author
 

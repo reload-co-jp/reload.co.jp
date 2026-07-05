@@ -16,13 +16,23 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v6
-      - name: Install, build, and upload your site
-        uses: withastro/action@v5
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 21
-          package-manager: pnpm@latest
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        run: pnpm build
         env:
-          PUBLIC_SLACK_URL: ${{ secrets.PUBLIC_SLACK_URL }}
+          NEXT_PUBLIC_SLACK_URL: ${{ secrets.NEXT_PUBLIC_SLACK_URL }}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
 
   deploy:
     needs: build
