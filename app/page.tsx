@@ -325,6 +325,14 @@ export default function Home() {
           </dl>
           <dl>
             <dt>
+              <a href="//restring.reload.co.jp" target="_blank" rel="noreferrer">
+                Restring
+              </a>
+            </dt>
+            <dd>開発者向け文字列処理・比較ツール集</dd>
+          </dl>
+          <dl>
+            <dt>
               <a href="//sozoroto.reload.co.jp" target="_blank" rel="noreferrer">
                 そぞろっと！ なんとなく、きままな冒険を。
               </a>
