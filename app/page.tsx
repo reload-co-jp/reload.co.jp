@@ -301,6 +301,22 @@ export default function Home() {
           </dl>
           <dl>
             <dt>
+              <a href="//ueno.reload.co.jp" target="_blank" rel="noreferrer">
+                上野ライブ
+              </a>
+            </dt>
+            <dd>上野のイベント・新店舗・セール・展示会などの最新情報を紹介するメディア</dd>
+          </dl>
+          <dl>
+            <dt>
+              <a href="//asakusa.reload.co.jp" target="_blank" rel="noreferrer">
+                浅草ライブ
+              </a>
+            </dt>
+            <dd>浅草のイベント・新店舗・セール・展示会などの最新情報を紹介するメディア</dd>
+          </dl>
+          <dl>
+            <dt>
               <a href="///lawyer-quest.reload.co.jp" target="_blank" rel="noreferrer">
                 Lawyer Quest | 法律を、冒険のように攻略する
               </a>
